@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Maths Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Shadows+Into+Light&family=Viga&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="main.js"></script>
+<script src="game_page.js"></script>
+</head>
+<body>
+
+	<h4 id="player1_name"></h4><span id="player1_score"></span>
+	<br>
+	<h4 id="player2_name"></h4><span id="player2_score"></span>
+	<div class="container">
+		<center>
+			<h1 style="font-family: 'Viga', sans-serif; font-size :100px; color: green;">Maths Quiz</h1>
+			<h3 id="player_question"></h3>
+			<h3 id="player_answer"></h3>
+			<div id="output" class="col-lg-6">
+				<h3>Multiplication</h3>
+                <br>
+				<span><h4 style="visibility: hidden;" id="number1_p"></h4></span>
+				<span><h4 style="visibility: hidden;" id="number1_p"></h4></span>
+				<br>
+				<input id="answer_input" placeholder="answer" style="visibility: hidden;">
+			</div>
+			<br>
+			<br>
+	
+			<label>Send You Number: <b style="color: green">Number 1</b></label>
+			<input type="text" id="number1" class="form-control" placeholder="number">
+			<br>
+			<label>Send You Number: <b style="color: green">Number 2</b></label>
+			<input type="text" id="number2" class="form-control" placeholder="number">
+			<br><br><br>
+			<button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+			
+		</center>
+	</div>
+
+</body>
+</html>
